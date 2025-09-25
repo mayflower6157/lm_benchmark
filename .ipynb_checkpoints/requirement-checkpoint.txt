@@ -1,0 +1,23 @@
+# ✅ PyTorch stack (CUDA 12.8 runtime)
+torch==2.8.0+cu128
+torchvision==0.23.0+cu128
+torchaudio==2.8.0+cu128
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+# ✅ Hugging Face ecosystem
+transformers>=4.44.0
+accelerate>=0.33.0
+datasets
+evaluate
+sentencepiece
+safetensors
+flash-attn --no-build-isolation
+
+# ✅ EleutherAI eval harness
+git+https://github.com/EleutherAI/lm-evaluation-harness.git
+
+# ✅ Performance + utilities
+triton==3.4.0
+tqdm
+zeno-client
+zeno-evals
